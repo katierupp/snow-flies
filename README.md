@@ -1,5 +1,5 @@
 # snow-flies
-Tracking and analysis of snow flies 
+Tracking and analysis of snow flies: a study of insect cold tolerance
 
 ## experimental procedure (new)
 
