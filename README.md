@@ -27,11 +27,11 @@ Tracking and analysis of snow flies
 12. Carefully transfer the snow fly to a microcentrifuge tube. If the snow fly did not survive, fill the test tube with ethanol to preserve the specimen.
 13. Dry off the cold plate with paper towels (ice crystals often form)
 14. Enter data relating to the trial in a spreadsheet. Be sure to include: 
-   * Snow fly ID
-   * Filename of thermal video
-   * Filename of visible light video
-   * Collection location 
-   * Any additional notes/observations
+    * Snow fly ID
+    * Filename of thermal video
+    * Filename of visible light video
+    * Collection location 
+    * Any additional notes/observations
 15. Repeat for remaining snow flies
 16. Remove the microSD card from the thermal camera and upload the .csq files to Google Drive 
 17. Place specimens in labeled tubes back in the snow fly lodge 
