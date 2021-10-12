@@ -19,7 +19,7 @@ Tracking and analysis of snow flies
    * Specify the frequency of temporal alignment before uploading
 5. Turn on thermal camera and switch the image mode to macro
 6. Coat the metal ring with RainX, then position it on the peltier so the entire bottom of the ring can be seen in both the visible light and thermal camera
-7. Place one snowfly in the metal ring 
+7. Place one snow fly in the metal ring 
 8. Click 'start' in the TecaLog software to start the temperature ramp, then start recording from the visible light and thermal cameras
 9. Monitor the snowfly occasionally to make sure it does not attempt to climb out of the metal ring (don't be fooled, they can be sneaky!)
 10. After the cold plate reaches the lowest temperature, allow it to come back to room temperature (around 0C)
