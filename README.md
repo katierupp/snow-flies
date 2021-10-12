@@ -4,10 +4,10 @@ Tracking and analysis of snow flies
 ## experimental procedure (new)
 
 1. Plug in all equipment 
-  * Laptop always needs to be charging
-  * Connect peltier to laptop (usb) and power supply (power cable)
-  * Connect visible light camera to laptop (usb)
-  * Connect arduino board to laptop and upload servo.ino to the arduino board (can disconnect after uploading if the arduino is plugged into power supply)
+   * Laptop always needs to be charging
+   * Connect peltier to laptop (usb) and power supply (power cable)
+   * Connect visible light camera to laptop (usb)
+   * Connect arduino board to laptop and upload servo.ino to the arduino board (can disconnect after uploading if the arduino is plugged into power supply)
 2. Open TecaLog software on laptop to control peltier
   * Create temperature ramp (only need to do once assuming the same ramp is used for all experiments)
   * Load in the temperature ramp and save it to the controller
