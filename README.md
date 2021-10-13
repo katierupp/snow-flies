@@ -48,7 +48,8 @@ file structure: experiment date -> snow fly ID -> trial number -> thermal video
     * Collection date
     * Collection location
     * Temperature at which snow fly entered chill coma (if at all)
-    * Temperature at which supercooling occurred (if at all)
+    * Temperature at which snow fly reached the supercooling point (if at all)
+    * Survival status of snow fly
 
 ## tracking 
 
