@@ -1,6 +1,12 @@
 # snow-flies
 Tracking and analysis of snow flies: a study of insect cold tolerance
 
+## summary of data 
+### winter 2020-2021
+spreadsheet: https://docs.google.com/spreadsheets/d/1LyIAfQo4p5vI4wIxJQ8HYh3IkgytjAzbROX8pHmPSaI/edit#gid=0
+file structure: experiment date -> snow fly ID -> trial number -> thermal video 
+(e.g. 1.3.21 -> SF0081 -> trial1 -> FLIR0196.csq) 
+
 ## experimental procedure (new)
 
 1. Plug in all equipment 
@@ -25,16 +31,22 @@ Tracking and analysis of snow flies: a study of insect cold tolerance
 10. After the cold plate reaches the lowest temperature, allow it to come back to room temperature (around 0C)
 11. Stop recording from the visible light and thermal cameras
 12. Carefully transfer the snow fly to a microcentrifuge tube. If the snow fly did not survive, fill the test tube with ethanol to preserve the specimen.
-13. Dry off the cold plate with paper towels (ice crystals often form)
-14. Enter data relating to the trial in a spreadsheet. Be sure to include: 
+13. Dry off the cold plate and metal ring with paper towels because ice crystals usually form during each trial. This step is more important than it may sound - if a snow fly comes in contact with a drop of water, it can hinder the snow fly's ability to move or drown the snow fly. 
+14. Enter data relating to the trial in a spreadsheet (refer to the link at the top for an example). Be sure to immediately include: 
+    * Experiment date
     * Snow fly ID
     * Filename of thermal video
     * Filename of visible light video
-    * Collection location 
     * Any additional notes/observations
 15. Repeat for remaining snow flies
-16. Remove the microSD card from the thermal camera and upload the .csq files to Google Drive 
-17. Place specimens in labeled tubes back in the snow fly lodge 
+16. Remove the microSD card from the thermal camera, return to lab, and upload the .csq files to Google Drive using a lab computer
+17. Transfer all videos captured by the visible light camera to Google Drive
+18. Place snow flies back in the snow fly lodge 
+19. Thermal videos (.csq) can be opened and viewed with the FLIR ResearchIR software. Add additional information to the spreadsheet: 
+    * Collection date
+    * Collection location
+    * Temperature at which snow fly entered chill coma (if at all)
+    * Temperature at which supercooling occurred (if at all)
 
 ## tracking 
 
