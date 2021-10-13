@@ -52,9 +52,17 @@ file structure: experiment date -> snow fly ID -> trial number -> thermal video
     * Survival status of snow fly
 
 ## tracking 
+* ```convert_to_via.ipynb:``` Converts corrected snow fly annotations from VIA2 (position of snow fly from every 60th frame) to a .csv format that is easier to work with. Then corrects the position data obtained from the MATLAB tracking
+* ```extract_frames.m:```
+* ```filter_positions.m:```
+* ```get_masks.m:```
+* ```get_scp_videos.m:```
+* ```process_all_corrections.m:```
+* ```process_all.m:```
+* ```save_sf_region.m:```
+* ```track_snow_fly.m:```
 
-## analysis
-* ```convert_to_via.ipynb:``` Converts corrected snow fly annotations from VIA2 (position of snow fly from every 60th frame) to a .csv format that is easier to work with. Then corrects the position data obtained from the MATLAB tracking 
+## analysis 
 * ```sf_analysis_v1.ipynb:``` First version of the analyses, so it's probably best to refer to ```sf_analysis_v2.ipynb```. 
 * ```sf_analysis_v2.ipynb:``` The main snow fly analysis file. 
 * ```sf_grant_figure.ipynb:``` Generates a few figures that were submitted as part of a grant application. 
