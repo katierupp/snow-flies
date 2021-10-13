@@ -51,18 +51,18 @@ file structure: experiment date -> snow fly ID -> trial number -> thermal video
     * Temperature at which snow fly reached the supercooling point (if at all)
     * Survival status of snow fly
 
-## tracking 
-* ```convert_to_via.ipynb:``` Converts corrected snow fly annotations from VIA2 (position of snow fly from every 60th frame) to a .csv format that is easier to work with. Then corrects the position data obtained from the MATLAB tracking
-* ```extract_frames.m:```
-* ```filter_positions.m:```
-* ```get_masks.m:```
-* ```get_scp_videos.m:```
-* ```process_all_corrections.m:```
-* ```process_all.m:```
-* ```save_sf_region.m:```
-* ```track_snow_fly.m:```
+## tracking (2020-2021) 
+* ```convert_to_via.ipynb:``` Creates a .csv of tracked snow fly annotations to load into VIA2 for manual correction (only every 60th frame was used). Uses output containing manual corrections from via to corrects the position data obtained from the MATLAB tracking, interpolating where necessary. Also handles cases where the snow fly is not visible in the field of view.
+* ```extract_frames.m:``` Traverses through all thermal videos and saves every 60th frame for tracking correction.
+* ```filter_positions.m:``` Function for removing single frame jumps in the x and y snow fly positions after the initial tracking.
+* ```get_masks.m:``` Traverses through all the thermal videos and saves an ROI corresponding to the bottom of the metal ring (combines two ROI bitmaps manually obtained from the FLIR researchIR software).
+* ```get_scp_videos.m:``` Generates a short .avi file (~30s) of the supercooling point if the SCP frame was entered in the spreadsheet (from visual inspection). 
+* ```process_all_corrections.m:``` Using the corrected position data obtained from ```convert_to_via.ipynb```, corrects the temperatures in all frames where the snow fly position was manually corrected or interpolated 
+* ```process_all.m:``` Generates .csv for each thermal video containing the x and y positions of the snow fly in each frame, as well as the average cold plate temperature, the detected snow fly temperature, and the maximum snow fly temperature. About the tracking algorithm: A background subtracted image is computed for each frame, then detects the location of the maximum pixel value, which usually corresponds to the snow fly. 
+* ```save_sf_region.m:```: Traverses through all thermal videos and saves an 80x80 pixel region centered around the tracked snow fly position for each frame. Used these to analyze temperatures at the supercooling point and during partial freezing.
+* ```track_snow_fly.m:``` Function to track the snow fly given a single .csq file (i.e. one iteration of ```process_all.m:```). 
 
-## analysis 
+## analysis (2020-2021)
 * ```sf_analysis_v1.ipynb:``` First version of the analyses, so it's probably best to refer to ```sf_analysis_v2.ipynb```. 
 * ```sf_analysis_v2.ipynb:``` The main snow fly analysis file. 
 * ```sf_grant_figure.ipynb:``` Generates a few figures that were submitted as part of a grant application. 
