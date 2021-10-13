@@ -4,7 +4,9 @@ Tracking and analysis of snow flies: a study of insect cold tolerance
 ## summary of data 
 ### winter 2020-2021
 spreadsheet: https://docs.google.com/spreadsheets/d/1LyIAfQo4p5vI4wIxJQ8HYh3IkgytjAzbROX8pHmPSaI/edit#gid=0
-file structure: experiment date -> snow fly ID -> trial number -> thermal video 
+
+file structure: experiment date -> snow fly ID -> trial number -> thermal video
+
 (e.g. 1.3.21 -> SF0081 -> trial1 -> FLIR0196.csq) 
 
 ## experimental procedure (new)
