@@ -54,3 +54,8 @@ file structure: experiment date -> snow fly ID -> trial number -> thermal video
 ## tracking 
 
 ## analysis
+* ```convert_to_via.ipynb:``` Converts corrected snow fly annotations from VIA2 (position of snow fly from every 60th frame) to a .csv format that is easier to work with. Then corrects the position data obtained from the MATLAB tracking 
+* ```sf_analysis_v1.ipynb:``` First version of the analyses, so it's probably best to refer to ```sf_analysis_v2.ipynb```. 
+* ```sf_analysis_v2.ipynb:``` The main snow fly analysis file. 
+* ```sf_grant_figure.ipynb:``` Generates a few figures that were submitted as part of a grant application. 
+* ```sf_region_analysis.ipynb:``` Analyses focused on a small pixel region around the location of the tracked snowfly, so the region presumably contains all of the pixels that compose the snow fly. Plots the temperatures in this region across time, showing the evolution of heat release at the supercooling point and during partial freezing events. I mainly used this notebook to investigate a few very specific examples, since partial freezing could not be automatically detected.
