@@ -1,5 +1,5 @@
 # snow-flies
-Tracking and analysis of snow flies: a study of insect cold tolerance
+Tracking and analysis of snow fly behavior: a study of insect cold tolerance
 
 ## summary of data 
 ### winter 2020-2021
