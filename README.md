@@ -64,6 +64,6 @@ file structure: organism -> experiment date -> snow fly ID -> trial number -> th
 
 ## analysis (2020-2021)
 * ```sf_analysis_v1.ipynb:``` First version of the analyses, so it's probably best to refer to ```sf_analysis_v2.ipynb```. 
-* ```sf_analysis_v2.ipynb:``` The main snow fly analysis file. 
+* ```sf_analysis_v2.ipynb:``` The main snow fly analysis file. Loads all position and temperature data into a DataFrame for analysis. Filters and interpolates the position and temperature data, plots temperatures across time, computes velocity to analyze proportion of time spent moving, supercooling point temperature analyses, plots histograms comparing supercooling point and critical thermal minima.
 * ```sf_grant_figure.ipynb:``` Generates a few figures that were submitted as part of a grant application. 
-* ```sf_region_analysis.ipynb:``` Analyses focused on a small pixel region around the location of the tracked snowfly, so the region presumably contains all of the pixels that compose the snow fly. Plots the temperatures in this region across time, showing the evolution of heat release at the supercooling point and during partial freezing events. I mainly used this notebook to investigate a few very specific examples, since partial freezing could not be automatically detected.
+* ```sf_region_analysis.ipynb:``` Analyses focused on a small pixel region around the location of the tracked snow fly, so the region presumably contains all of the pixels that compose the snow fly. Plots the temperatures in this region across time, showing the evolution of heat release at the supercooling point and during partial freezing events. I mainly used this notebook to investigate a few very specific examples, since partial freezing could not be automatically detected.
