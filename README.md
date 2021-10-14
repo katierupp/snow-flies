@@ -62,6 +62,17 @@ file structure: organism -> experiment date -> snow fly ID -> trial number -> th
 * ```save_sf_region.m:```: Traverses through all thermal videos and saves an 80x80 pixel region centered around the tracked snow fly position for each frame. Used these to analyze temperatures at the supercooling point and during partial freezing.
 * ```track_snow_fly.m:``` Function to track the snow fly given a single .csq file (i.e. one iteration of ```process_all.m:```). 
 
+### steps for tracking 
+1. Save ellipses (.bmp) in FLIR Research IR that mask out the bottom of the metal ring
+2. Run ```get_masks.m``` (generates ```roi.png```)
+3. Run ```process_all.m``` (generates ```temp_data.csv```)
+4. Run ```extract_frames.m``` (saves every 60th frame to a folder called ```snapshots```)
+5. Run first half of ```convert_to_via.ipynb``` (opens ```temp_data.csv``` and saves the x and y coordinates of the tracked snow fly in every 60th frame to ```via_region_data.csv```)
+6. Use VIA2 to load the frames in ```snapshots``` and the snow fly coordinates from ```via_region_data.csv```. Correct all snow fly positions in each extracted frame. Download corrected annotations as ```via_export_csv.csv```.
+7. Run second half of ```convert_to_via.ipynb``` (uses ```via_export_csv.csv``` to correct ```temp_data.csv``` and generate ```temp_data_corrections_visible.csv```)
+8. Run ```process_all_corrections.m``` (uses positions in ```temp_data_corrections_visible.csv``` to generate ```temp_data_final.csv```)
+9. Analyze ```temp_data_final.csv``` (```sf_analysis_v2.ipynb``` loads all data into a single dataframe)
+
 ## analysis (2020-2021)
 * ```sf_analysis_v1.ipynb:``` First version of the analyses, so it's probably best to refer to ```sf_analysis_v2.ipynb```. 
 * ```sf_analysis_v2.ipynb:``` The main snow fly analysis file. Loads all position and temperature data into a DataFrame for analysis. Filters and interpolates the position and temperature data, plots temperatures across time, computes velocity to analyze proportion of time spent moving, supercooling point temperature analyses, plots histograms comparing supercooling point and critical thermal minima.
