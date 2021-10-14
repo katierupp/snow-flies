@@ -71,7 +71,8 @@ file structure: organism -> experiment date -> snow fly ID -> trial number -> th
 6. Use VIA2 to load the frames in ```snapshots``` and the snow fly coordinates from ```via_region_data.csv```. Correct all snow fly positions in each extracted frame. Download corrected annotations as ```via_export_csv.csv```.
 7. Run second half of ```convert_to_via.ipynb``` (uses ```via_export_csv.csv``` to correct ```temp_data.csv``` and generate ```temp_data_corrections_visible.csv```)
 8. Run ```process_all_corrections.m``` (uses positions in ```temp_data_corrections_visible.csv``` to generate ```temp_data_final.csv```)
-9. Analyze ```temp_data_final.csv``` (```sf_analysis_v2.ipynb``` loads all data into a single dataframe)
+9. Run first part of ```sf_analysis_v2.ipynb```, which combines all ```temp_data_final.csv``` files into a single file (```snowfly_data.parquet```)
+10. Analyze ```snowfly_data.parquet```
 
 ## analysis (2020-2021)
 * ```sf_analysis_v1.ipynb:``` First version of the analyses, so it's probably best to refer to ```sf_analysis_v2.ipynb```. 
