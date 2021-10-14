@@ -22,7 +22,7 @@ file structure: organism -> experiment date -> snow fly ID -> trial number -> th
 3. Open FlyCap software on laptop to control visible light camera
    * Set up the camera to capture video (not images)
    * Specify the location and filename of the .avi file
-   * Select 'Compressed AVI' for the video format and specify the quality (0-100)
+   * Select 'M-JPEG' for the video compression and specify the quality (0-100)
 4. Upload servo.ino to the arduino board (can disconnect the arduino from the computer after uploading if the arduino is plugged into power supply)
    * Specify the frequency of temporal alignment before uploading
 5. Turn on thermal camera and switch the image mode to macro
