@@ -16,6 +16,7 @@ file structure: organism -> experiment date -> snow fly ID -> trial number -> th
    * Connect peltier to laptop (usb) and power supply (power cable)
    * Connect visible light camera to laptop (usb)
    * Connect arduino board to laptop (can disconnect after uploading if the arduino is plugged into power supply)
+   * Turn on lamp to illuminate arena (snow flies are more active in the light)
 2. Open TecaLog software on laptop to control peltier
    * Create temperature ramp (only need to do once assuming the same ramp is used for all experiments)
    * Load in the temperature ramp and save it to the controller
