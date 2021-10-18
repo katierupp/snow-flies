@@ -16,7 +16,7 @@ file structure: organism -> experiment date -> snow fly ID -> trial number -> th
    * Connect peltier to laptop (usb) and power supply (power cable)
    * Connect visible light camera to laptop (usb)
    * Connect arduino board to laptop (can disconnect after uploading if the arduino is plugged into power supply)
-   * Turn on lamp to illuminate arena (snow flies are more active in the light)
+   * Turn on and adjust lamp to illuminate arena (snow flies are more active in the light)
 2. Open TecaLog software on laptop to control peltier
    * Create temperature ramp (only need to do once assuming the same ramp is used for all experiments)
    * Load in the temperature ramp and save it to the controller
@@ -26,7 +26,7 @@ file structure: organism -> experiment date -> snow fly ID -> trial number -> th
    * Select 'M-JPEG' for the video compression and specify the quality (0-100)
 4. Upload servo.ino to the arduino board (can disconnect the arduino from the computer after uploading if the arduino is plugged into power supply)
    * Specify the frequency of temporal alignment before uploading
-5. Turn on thermal camera and switch the image mode to macro
+5. Turn on thermal camera and switch the image mode to macro (remember to monitor the battery level too - a fully charged battery supports ~5 30 minute trials)
 6. Coat the metal ring with RainX, then position it on the peltier so the entire bottom of the ring can be seen in both the visible light and thermal camera
 7. Place one snow fly in the metal ring 
 8. Click 'start' in the TecaLog software to start the temperature ramp, then start recording from the visible light and thermal cameras
