@@ -14,11 +14,13 @@ file structure: organism -> experiment date -> snow fly ID -> trial number -> th
 1. Plug in all equipment 
    * Laptop always needs to be charging
    * Connect peltier to laptop (usb) and power supply (power cable)
-   * Turn on and adjust lamp to illuminate arena (snow flies are more active in the light)
 2. Open TecaLog software on laptop to control peltier
    * Create temperature ramp (only need to do once assuming the same ramp can be used for all experiments)
    * Load in the temperature ramp and save it to the controller
-5. Turn on thermal camera and switch the image mode to macro (remember to monitor the battery level too - a fully charged battery supports ~5 30 minute trials)
+5. Turn on thermal camera 
+   * Switch the image mode to macro (thermal is the default)
+   * Turn on the thermal camera's light with the lightbulb icon to illuminate the arena. This is important because snow flies are more active in the light.              Alternatively, you can set up a lamp or some LEDs.
+   * The camera has two batteries, so make sure the one that is not in use is fully charged or charging.
 6. Coat the metal ring with RainX, then position it on the peltier so the entire bottom of the ring can be seen in the thermal camera
 7. Place one snow fly in the metal ring 
 8. Click 'start' in the TecaLog software to start the temperature ramp, then start recording from the thermal camera
@@ -50,7 +52,6 @@ file structure: organism -> experiment date -> snow fly ID -> trial number -> th
    * Connect peltier to laptop (usb) and power supply (power cable)
    * Connect visible light camera to laptop (usb)
    * Connect arduino board to laptop (can disconnect after uploading if the arduino is plugged into power supply)
-   * Turn on and adjust lamp to illuminate arena (snow flies are more active in the light)
 2. Open TecaLog software on laptop to control peltier
    * Create temperature ramp (only need to do once assuming the same ramp is used for all experiments)
    * Load in the temperature ramp and save it to the controller
